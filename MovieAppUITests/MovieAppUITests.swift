@@ -26,17 +26,22 @@ class MovieAppUITests: XCTestCase {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
+        
+        XCTAssertEqual(app.navigationBars.element.identifier, "Popular Movies")
+        XCTAssertTrue(app.tables["movieListViewTitle"].buttons["663712-663712-663712"].exists)
+        app.tables["movieListViewTitle"].buttons["663712-663712-663712"].tap()
+        app.navigationBars["Terrifier 2"].buttons["Popular Movies"].tap()
 
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
-    }
+//    func testLaunchPerformance() throws {
+//        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
+//            // This measures how long it takes to launch your application.
+//            measure(metrics: [XCTApplicationLaunchMetric()]) {
+//                XCUIApplication().launch()
+//            }
+//        }
+//    }
 }

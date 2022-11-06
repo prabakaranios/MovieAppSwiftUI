@@ -25,9 +25,11 @@ struct MoviesView: View {
                             .onAppear {
                                 self.movieListVM.loadMoreMovies(currentItem: movieList)
                             }
+                            .accessibilityIdentifier("\(movieList.id)")
                     }
                 }
                 .navigationBarTitle("Popular Movies")
+                .accessibilityIdentifier("movieListViewTitle")
             }
         }
     }
