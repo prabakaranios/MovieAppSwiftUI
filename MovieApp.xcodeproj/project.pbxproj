@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DD241EA2918041300F6BD59 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3DD241E92918041300F6BD59 /* URLImage */; };
+		3DD241EC2918041300F6BD59 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = 3DD241EB2918041300F6BD59 /* URLImageStore */; };
 		CA403EFC26B3BB70004805DC /* MovieAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA403EFB26B3BB70004805DC /* MovieAppApp.swift */; };
 		CA403EFE26B3BB70004805DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA403EFD26B3BB70004805DC /* ContentView.swift */; };
 		CA403F0026B3BB72004805DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA403EFF26B3BB72004805DC /* Assets.xcassets */; };
@@ -19,8 +21,6 @@
 		CA403F4726B3CF6D004805DC /* UrlImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA403F4626B3CF6D004805DC /* UrlImageView.swift */; };
 		CA403F4C26B3CF7E004805DC /* UrlImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA403F4B26B3CF7E004805DC /* UrlImageViewModel.swift */; };
 		CA403F5226B3D6EC004805DC /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA403F5126B3D6EC004805DC /* MovieDetailView.swift */; };
-		CA403F5826B3DBB5004805DC /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = CA403F5726B3DBB5004805DC /* URLImageStore */; };
-		CA403F5A26B3DBB5004805DC /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = CA403F5926B3DBB5004805DC /* URLImage */; };
 		CA403F6026B3E8C9004805DC /* MovieDetailServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA403F5F26B3E8C9004805DC /* MovieDetailServices.swift */; };
 		CA403F6826B3EA9B004805DC /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA403F6726B3EA9B004805DC /* MovieDetail.swift */; };
 		CA403F6D26B3EF1E004805DC /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA403F6C26B3EF1E004805DC /* MovieDetailViewModel.swift */; };
@@ -72,8 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA403F5A26B3DBB5004805DC /* URLImage in Frameworks */,
-				CA403F5826B3DBB5004805DC /* URLImageStore in Frameworks */,
+				3DD241EC2918041300F6BD59 /* URLImageStore in Frameworks */,
+				3DD241EA2918041300F6BD59 /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +94,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DD241ED291806E600F6BD59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CA403EEF26B3BB70004805DC = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +108,7 @@
 				CA403F0C26B3BB73004805DC /* MovieAppTests */,
 				CA403F1726B3BB73004805DC /* MovieAppUITests */,
 				CA403EF926B3BB70004805DC /* Products */,
+				3DD241ED291806E600F6BD59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,8 +218,8 @@
 			);
 			name = MovieApp;
 			packageProductDependencies = (
-				CA403F5726B3DBB5004805DC /* URLImageStore */,
-				CA403F5926B3DBB5004805DC /* URLImage */,
+				3DD241E92918041300F6BD59 /* URLImage */,
+				3DD241EB2918041300F6BD59 /* URLImageStore */,
 			);
 			productName = MovieApp;
 			productReference = CA403EF826B3BB70004805DC /* MovieApp.app */;
@@ -285,7 +293,7 @@
 			);
 			mainGroup = CA403EEF26B3BB70004805DC;
 			packageReferences = (
-				CA403F5626B3DBB5004805DC /* XCRemoteSwiftPackageReference "url-image" */,
+				3DD241E82918041300F6BD59 /* XCRemoteSwiftPackageReference "url-image" */,
 			);
 			productRefGroup = CA403EF926B3BB70004805DC /* Products */;
 			projectDirPath = "";
@@ -661,26 +669,26 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CA403F5626B3DBB5004805DC /* XCRemoteSwiftPackageReference "url-image" */ = {
+		3DD241E82918041300F6BD59 /* XCRemoteSwiftPackageReference "url-image" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.1.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CA403F5726B3DBB5004805DC /* URLImageStore */ = {
+		3DD241E92918041300F6BD59 /* URLImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CA403F5626B3DBB5004805DC /* XCRemoteSwiftPackageReference "url-image" */;
-			productName = URLImageStore;
-		};
-		CA403F5926B3DBB5004805DC /* URLImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CA403F5626B3DBB5004805DC /* XCRemoteSwiftPackageReference "url-image" */;
+			package = 3DD241E82918041300F6BD59 /* XCRemoteSwiftPackageReference "url-image" */;
 			productName = URLImage;
+		};
+		3DD241EB2918041300F6BD59 /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DD241E82918041300F6BD59 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
