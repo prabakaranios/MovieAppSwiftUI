@@ -28,12 +28,17 @@ class MovieAppUITests: XCTestCase {
         app.launch()
         
         XCTAssertEqual(app.navigationBars.element.identifier, "Popular Movies")
-        XCTAssertTrue(app.tables["movieListViewTitle"].buttons["663712-663712-663712"].exists)
-        app.tables["movieListViewTitle"].buttons["663712-663712-663712"].tap()
-        app.navigationBars["Terrifier 2"].buttons["Popular Movies"].tap()
+        app.collectionViews["movieListViewTitle"]/*@START_MENU_TOKEN@*/.cells.buttons["436270-436270-436270"]/*[[".cells",".buttons[\"Black Adam, Nearly 5,000 years after he was bestowed with the almighty powers of the Egyptian gods—and imprisoned just as quickly—Black Adam is freed from his earthly tomb, ready to unleash his unique form of justice on the modern world.\"]",".buttons[\"436270-436270-436270\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[2,0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["Black Adam"].buttons["Popular Movies"].tap()
 
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+   
+
+        
+        
+        
     }
 
 //    func testLaunchPerformance() throws {
